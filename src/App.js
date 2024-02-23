@@ -1,5 +1,7 @@
 import Navbar from './components/navbar'
 import styled from 'styled-components'
+import Pesquisa from './components/pesquisa'
+import UltimosLancamentos from './components/ultimoslancamentos'
 
 
 const AppContainer = styled.div`
@@ -12,6 +14,8 @@ function App() {
   return (
     <AppContainer>
       <Navbar/>
+      <Pesquisa />
+      <UltimosLancamentos />
     </AppContainer>
   );
 }
