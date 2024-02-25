@@ -2,6 +2,7 @@ import Logos from '../logos';
 import Opcoes from '../opcoesheader';
 import Icones from '../iconesheader';
 import styled from 'styled-components'
+import { Link } from 'react-router-dom';
 
 
 const NavContainer = styled.header`
@@ -14,7 +15,9 @@ const NavContainer = styled.header`
 const Navbar = () => {
     return(
         <NavContainer>
-          <Logos/>
+          <Link to="/">
+            <Logos/>
+          </Link>
           <Opcoes/>
           <Icones/>
       </NavContainer>
