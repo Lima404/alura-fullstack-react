@@ -35,7 +35,7 @@ root.render(
       <Navbar/>
       <Routes>
         <Route path="/" element={ <Home /> } />
-        <Route path="/favoritos" element={<Favoritos />} />
+        <Route path="/favoritos" element={ <Favoritos />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
