@@ -57,21 +57,16 @@ const Titulo = styled.h2`
 
     return (
       <AppContainer>
-        <div>
           <Titulo>Aqui estão seus livros favoritos:</Titulo>
-          <ResultadoContainer>
-            {
-              favoritos.length !== 0 ? favoritos.map(favorito => (
-                <Resultado>
-                  <p>{favorito.nome}</p>
-                  <img src={livroImg}/>
-                </Resultado>
-              )) : null
-            }
-          </ResultadoContainer>
-        </div>
+              <ResultadoContainer>
+                  { favoritos.map( favorito => (
+                      <Resultado>
+                          <img src={livroImg}/>
+                          <p>{favorito.nome}</p>
+                      </Resultado>))}
+              </ResultadoContainer>
       </AppContainer>
   );
-  }
+}
 
 export default Favoritos
